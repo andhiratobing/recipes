@@ -4,6 +4,8 @@ plugins {
 
 dependencies {
 
+    implementationKotlinCoroutine()
+
     testImplementation()
 
     androidTestImplementation()
