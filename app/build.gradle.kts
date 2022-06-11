@@ -6,16 +6,16 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = AppConfigs.COMPILE_SDK
 
     defaultConfig {
-        applicationId = "com.art.android.recipes"
-        minSdk = 21
-        targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = AppConfigs.APPLICATION_ID_APP
+        minSdk = AppConfigs.MIN_SDK
+        targetSdk = AppConfigs.TARGET_SDK
+        versionCode = AppConfigs.VERSION_CODE
+        versionName = AppConfigs.VERSION_NAME
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = AppConfigs.TEST_INSTRUMENTATION_RUNNER
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -51,6 +51,8 @@ dependencies {
 
     // Core
     implementation(project(Modules.CORE_THEMES))
+    implementation(project(Modules.CORE_NAVIGATION))
+    implementation(project(Modules.CORE_COMPONENTS))
 
     // Feature
     implementation(project(Modules.FEATURE_SPLASH))

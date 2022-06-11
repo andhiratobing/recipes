@@ -21,4 +21,4 @@
 local.properties
 /buildSrc/build
 /buildSrc/.gradle
-dev.properties
+develop.properties

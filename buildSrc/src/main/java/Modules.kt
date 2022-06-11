@@ -5,7 +5,7 @@ object Modules {
     const val CORE_THEMES = ":core:themes"
     const val CORE_NAVIGATION = ":core:navigation"
     const val CORE_ABSTRACTION = ":core:abstraction"
-    const val CORE_CONFIGURATION = "core:configuration"
+    const val CORE_CONFIGURATION = ":core:configuration"
 
     // Libraries
     const val LIBRARY_DATABASE = ":libraries:database"
