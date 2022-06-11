@@ -43,11 +43,8 @@ object Versions {
     const val ACCOMPANIST_PAGER = ACCOMPANIST_VERSION
     const val ACCOMPANIST_PAGER_INDICATOR = ACCOMPANIST_VERSION
 
-    // Retrofit
-    const val RETROFIT_VERSION = "2.9.0"
-
-    // Okhttp
-    const val OKHTTP_VERSION = "4.9.3"
+    // Ktor client
+    const val KTOR_VERSION = "2.0.2"
 
     // Room
     const val ROOM_DATABASE_VERSION = "2.4.2"

@@ -66,16 +66,16 @@ object Libs {
             "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.COROUTINE_VERSION}"
     }
 
-    // Retrofit group, name, include version dependencies
-    object Retrofit {
-        const val RETROFIT = "com.squareup.retrofit2:retrofit:${Versions.RETROFIT_VERSION}"
-    }
-
-    // Okhttp group, name, include version dependencies
-    object Okhttp {
-        const val OKHTTP = "com.squareup.okhttp3:okhttp:${Versions.OKHTTP_VERSION}"
-        const val OKHTTP_LOGGING_INTERCEPTOR =
-            "com.squareup.okhttp3:logging-interceptor:${Versions.OKHTTP_VERSION}"
+    // Ktor group, name, include version dependencies
+    object Ktor {
+        const val KTOR_CORE = "io.ktor:ktor-client-core:${Versions.KTOR_VERSION}"
+        const val KTOR_ANDROID = "io.ktor:ktor-client-android:${Versions.KTOR_VERSION}"
+        const val KTOR_LOGGING = "io.ktor:ktor-client-logging:${Versions.KTOR_VERSION}"
+        const val KTOR_RESOURCE = "io.ktor:ktor-client-resources:${Versions.KTOR_VERSION}"
+        const val KTOR_SERIALIZATION =
+            "io.ktor:ktor-serialization-kotlinx-json:${Versions.KTOR_VERSION}"
+        const val KTOR_CONTENT_NEGOTIATION =
+            "io.ktor:ktor-client-content-negotiation:${Versions.KTOR_VERSION}"
     }
 
     // Room group, name, include version dependencies

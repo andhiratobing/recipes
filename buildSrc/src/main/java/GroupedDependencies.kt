@@ -46,9 +46,12 @@ internal val lifecycleViewModelDependencies = listOf(
 
 // Network
 internal val networkDependencies = listOf(
-    Libs.Retrofit.RETROFIT,
-    Libs.Okhttp.OKHTTP,
-    Libs.Okhttp.OKHTTP_LOGGING_INTERCEPTOR,
+    Libs.Ktor.KTOR_CORE,
+    Libs.Ktor.KTOR_ANDROID,
+    Libs.Ktor.KTOR_SERIALIZATION,
+    Libs.Ktor.KTOR_CONTENT_NEGOTIATION,
+    Libs.Ktor.KTOR_RESOURCE,
+    Libs.Ktor.KTOR_LOGGING
 )
 
 // Local database
