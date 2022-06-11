@@ -6,43 +6,43 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk = 32
 
     defaultConfig {
-        applicationId "com.art.android.recipes"
-        minSdk 21
-        targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        applicationId = "com.art.android.recipes"
+        minSdk = 21
+        targetSdk = 32
+        versionCode = 1
+        versionName = "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
-            useSupportLibrary true
+            useSupportLibrary = true
         }
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = "1.8"
     }
     buildFeatures {
-        compose true
+        compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerExtensionVersion = "1.1.1"
     }
     packagingOptions {
         resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
     // Allow references to generated code
@@ -57,12 +57,12 @@ dependencies {
     implementation("androidx.core:core-ktx:1.8.0")
 
     // Compose ui
-    implementation("androidx.compose.ui:ui:$compose_version")
+    implementation("androidx.compose.ui:ui:1.1.1")
     implementation("androidx.compose.material3:material3:1.0.0-alpha13")
-    implementation("androidx.compose.foundation:foundation:$compose_version")
+    implementation("androidx.compose.foundation:foundation:1.1.1")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.activity:activity-compose:1.4.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:$compose_version")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.1.1")
 
     // Compose navigation
     implementation("androidx.navigation:navigation-runtime-ktx:2.4.2")
@@ -88,15 +88,20 @@ dependencies {
     // Google accompanist
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")
 
+    // Room
+    implementation("androidx.room:room-runtime:2.4.2")
+    kapt("androidx.room:room-compiler:2.4.2")
+
+
     // Unit test
     testImplementation("junit:junit:4.13.2")
 
     // Instrumentation test
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:$compose_version")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.1")
 
     // Debug
-    debugImplementation("androidx.compose.ui:ui-tooling:$compose_version")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:$compose_version")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.1.1")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.1.1")
 }
