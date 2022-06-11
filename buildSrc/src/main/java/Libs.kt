@@ -11,13 +11,15 @@ object Libs {
             "androidx.compose.compiler:compiler:${Versions.COMPOSE_COMPILER_VERSION}"
         const val COMPOSE_UI = "androidx.compose.ui:ui:${Versions.COMPOSE_UI_VERSION}"
         const val COMPOSE_MATERIAL =
-            "androidx.compose.material:material:${Versions.COMPOSE_MATERIAL_VERSION}"
+            "androidx.compose.material3:material3:${Versions.COMPOSE_MATERIAL_VERSION}"
+        const val COMPOSE_MATERIAL_WINDOW_SIZE =
+            "androidx.compose.material3:material3-window-size-class:${Versions.COMPOSE_MATERIAL_VERSION}"
         const val COMPOSE_UI_TOOLING =
             "androidx.compose.ui:ui-tooling:${Versions.COMPOSE_UI_TOOLING_VERSION}"
         const val COMPOSE_UI_TOOLING_PREVIEW =
             "androidx.compose.ui:ui-tooling-preview:${Versions.COMPOSE_UI_TOOLING_VERSION}"
         const val COMPOSE_FOUNDATION =
-            "androidx.compose.foundation:foundation:${Versions.COMPOSE_FOUNDATION_VERSION}}"
+            "androidx.compose.foundation:foundation:${Versions.COMPOSE_FOUNDATION_VERSION}"
         const val COMPOSE_RUNTIME =
             "androidx.compose.runtime:runtime:${Versions.COMPOSE_RUNTIME_VERSION}"
         const val COMPOSE_CONSTRAINT_LAYOUT =

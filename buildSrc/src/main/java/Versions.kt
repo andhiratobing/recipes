@@ -4,7 +4,7 @@ object Versions {
     const val CORE_KTX_VERSION = "1.8.0"
 
     // Compose version
-    const val COMPOSE_VERSION = "1.2.0-beta01"
+    const val COMPOSE_VERSION = "1.2.0-beta03"
 
     // Lifecycle version
     private const val LIFECYCLE_VERSION = "2.4.1"

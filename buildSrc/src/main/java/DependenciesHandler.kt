@@ -17,8 +17,9 @@ fun DependencyHandler.implementationAndroidCore() {
  * Compose ui
  */
 fun DependencyHandler.implementationComposeUi() {
-    composeOfficialDependencies.forEach { add(IMPLEMENTATION, it) }
-    composeUiExternalDependencies.forEach { add(IMPLEMENTATION, it) }
+    composeOfficialDependencies.plus(Libs.Accompanist.accompanistUiController)
+        .plus(Libs.DaggerHilt.DAGGER_HILT_NAVIGATION_COMPOSE)
+        .forEach { add(IMPLEMENTATION, it) }
 }
 
 /**
@@ -26,20 +27,6 @@ fun DependencyHandler.implementationComposeUi() {
  */
 fun DependencyHandler.implementationPager() {
     composePagerDependencies.forEach { add(IMPLEMENTATION, it) }
-}
-
-/**
- * Coil for image loader
- */
-fun DependencyHandler.implementationCoil() {
-    coilDependencies.forEach { add(IMPLEMENTATION, it) }
-}
-
-/**
- * Animation
- */
-fun DependencyHandler.implementationLottie() {
-    lottieDependency.forEach { add(IMPLEMENTATION, it) }
 }
 
 /**
@@ -57,16 +44,6 @@ fun DependencyHandler.apiNetwork() {
 }
 
 /**
- * Database
- */
-fun DependencyHandler.implementationDatabase() {
-    databaseDependencies.forEach {
-        add(IMPLEMENTATION, it)
-        add(KAPT, it)
-    }
-}
-
-/**
  * Preference
  */
 fun DependencyHandler.implementationPreference() {
@@ -78,16 +55,6 @@ fun DependencyHandler.implementationPreference() {
  */
 fun DependencyHandler.implementationLifecycleViewModel() {
     lifecycleViewModelDependencies.forEach { add(IMPLEMENTATION, it) }
-}
-
-/**
- * Dagger hilt
- */
-fun DependencyHandler.implementationDaggerHilt() {
-    daggerHiltDependencies.forEach {
-        add(IMPLEMENTATION, it)
-        add(KAPT, it)
-    }
 }
 
 /**
