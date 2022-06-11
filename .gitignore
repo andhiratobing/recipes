@@ -12,9 +12,13 @@
 /.idea/misc.xml
 /.idea/gradle.xml
 /.idea/compiler.xml
+/.idea/deploymentTargetDropDown.xml
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+/buildSrc/build
+/buildSrc/.gradle
+dev.properties
