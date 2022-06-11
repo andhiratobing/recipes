@@ -4,6 +4,8 @@ plugins {
 
 dependencies {
 
+    implementation(Libs.Compose.COMPOSE_NAVIGATION)
+
     testImplementation()
 
     androidTestImplementation()
