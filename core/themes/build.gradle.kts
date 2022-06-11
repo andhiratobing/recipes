@@ -4,6 +4,10 @@ plugins {
 
 dependencies {
 
+    implementationAndroidCore()
+
+    implementationComposeUi()
+
     testImplementation()
 
     androidTestImplementation()
