@@ -1,6 +1,5 @@
 package com.art.android.navigation
 
-import androidx.navigation.NavArgument
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 
@@ -25,12 +24,6 @@ interface NavigationScreen {
      * destination's route from the route of the entire nested graph it belongs to.
      */
     val destination: String
-
-    // Specify param if in navigation need parameter
-    val param: String? get() = null
-
-    // Specify argument if in navigation need argument
-    val arguments: List<NavArgument> get() = emptyList()
 
     // Defines all screens to be used
     fun screen(navGraphBuilder: NavGraphBuilder, navController: NavController)
