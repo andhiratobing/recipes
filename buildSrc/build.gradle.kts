@@ -1,7 +1,7 @@
 plugins {
     `kotlin-dsl`
     `kotlin-dsl-precompiled-script-plugins`
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.6.21"
 }
 sourceSets {
     main {
@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     // in order to be able to use "kotlin-android" in the common script
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")
 
     // in order to recognize the "plugins" block in the common script
     implementation("com.android.tools.build:gradle:7.2.1")
