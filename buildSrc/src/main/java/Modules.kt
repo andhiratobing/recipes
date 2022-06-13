@@ -11,7 +11,6 @@ object Modules {
     const val LIBRARY_DATABASE = ":libraries:database"
     const val LIBRARY_NETWORK = ":libraries:network"
     const val LIBRARY_PREFERENCE = ":libraries:preference"
-    const val LIBRARY_CONVERTER = ":libraries:converter"
 
     // Feature
     const val FEATURE_SPLASH = ":features:splash"

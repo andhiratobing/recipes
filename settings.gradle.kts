@@ -26,7 +26,6 @@ include(":core:configuration")
 include(":libraries:database")
 include(":libraries:network")
 include(":libraries:preference")
-include(":libraries:converter")
 
 // Feature
 include(":features:splash")
