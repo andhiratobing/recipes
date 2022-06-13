@@ -1,10 +1,6 @@
 import org.gradle.api.artifacts.dsl.DependencyHandler
-
-const val IMPLEMENTATION = "implementation"
-const val KAPT = "kapt"
-const val TEST_IMPLEMENTATION = "testImplementation"
-const val ANDROID_TEST_INSTRUMENTATION = "androidTestImplementation"
-const val DEBUG_IMPLEMENTATION = "debugImplementation"
+import org.jetbrains.kotlin.gradle.utils.API
+import org.jetbrains.kotlin.gradle.utils.IMPLEMENTATION
 
 /**
  * Android core
@@ -40,7 +36,7 @@ fun DependencyHandler.implementationKotlinCoroutine() {
  * Network
  */
 fun DependencyHandler.apiNetwork() {
-    networkDependencies.forEach { add(IMPLEMENTATION, it) }
+    networkDependencies.forEach { add(API, it) }
 }
 
 /**
@@ -61,16 +57,16 @@ fun DependencyHandler.implementationLifecycleViewModel() {
  * Unit test
  */
 fun DependencyHandler.testImplementation() {
-    unitTestDependencies.forEach { add(TEST_IMPLEMENTATION, it) }
+    unitTestDependencies.forEach { add("testImplementation", it) }
 }
 
 /**
  * Instrumentation test
  */
 fun DependencyHandler.androidTestImplementation() {
-    androidInstrumentationTestDependencies.forEach { add(ANDROID_TEST_INSTRUMENTATION, it) }
+    androidInstrumentationTestDependencies.forEach { add("androidTestImplementation", it) }
 }
 
 fun DependencyHandler.debugImplementation() {
-    debugDependencies.forEach { add(DEBUG_IMPLEMENTATION, it) }
+    debugDependencies.forEach { add("debugImplementation", it) }
 }
