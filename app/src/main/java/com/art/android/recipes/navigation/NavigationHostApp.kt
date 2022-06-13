@@ -9,7 +9,7 @@ import com.art.android.splash.navigation.splashNavGraph
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 @Composable
@@ -25,7 +25,7 @@ fun NavigationHostApp(
             // Splash nav graph
             splashNavGraph(navController = navController)
 
-            // Recipes nav graph
+            // RecipesRepository nav graph
             recipesNavGraph(navController = navController)
         }
     )

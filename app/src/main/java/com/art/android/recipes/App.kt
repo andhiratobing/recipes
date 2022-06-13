@@ -5,7 +5,7 @@ import dagger.hilt.android.HiltAndroidApp
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 @HiltAndroidApp

@@ -8,7 +8,7 @@ import com.art.android.recipes.ui.RecipesScreen
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 object RecipesNavDirection : NavigationScreen {
