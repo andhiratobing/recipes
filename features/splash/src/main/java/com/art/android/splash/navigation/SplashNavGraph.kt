@@ -8,7 +8,7 @@ import com.art.android.splash.navigation.directions.SplashNavDirection
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 fun NavGraphBuilder.splashNavGraph(

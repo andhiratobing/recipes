@@ -9,7 +9,7 @@ import kotlinx.coroutines.delay
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 @Composable

@@ -9,7 +9,7 @@ import com.art.android.splash.R
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 @Composable

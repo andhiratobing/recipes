@@ -8,7 +8,7 @@ import com.art.android.splash.ui.SplashScreen
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 object SplashNavDirection : NavigationScreen {
