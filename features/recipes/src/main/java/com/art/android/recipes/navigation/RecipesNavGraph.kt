@@ -8,7 +8,7 @@ import com.art.android.recipes.navigation.directions.RecipesNavDirection
 
 /**
  * @author andhiratobing
- * @project Recipes
+ * @project RecipesRepository
  */
 
 fun NavGraphBuilder.recipesNavGraph(
