@@ -4,9 +4,5 @@ plugins {
 
 dependencies {
 
-    implementation(Libs.Compose.COMPOSE_NAVIGATION)
-
-    testImplementation()
-
-    androidTestImplementation()
+    api(Libs.Compose.COMPOSE_NAVIGATION)
 }

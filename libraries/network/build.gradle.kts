@@ -12,10 +12,6 @@ dependencies {
 
     implementation(Libs.DaggerHilt.DAGGER_HILT_ANDROID)
     kapt(Libs.DaggerHilt.DAGGER_HILT_COMPILER)
-
-    testImplementation()
-
-    androidTestImplementation()
 }
 
 // Allow references to generated code

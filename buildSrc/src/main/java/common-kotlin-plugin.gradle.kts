@@ -21,3 +21,9 @@ android {
         jvmTarget = AppConfigs.JVM_TARGET
     }
 }
+
+dependencies {
+
+    testImplementation()
+    androidTestImplementation()
+}

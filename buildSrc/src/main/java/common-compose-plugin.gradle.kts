@@ -35,3 +35,14 @@ android {
         }
     }
 }
+
+dependencies {
+
+    implementationAndroidCore()
+    implementationComposeUi()
+    debugImplementation(Libs.Compose.COMPOSE_UI_TOOLING)
+    debugApi(Libs.Android.CUSTOM_VIEW)
+    debugApi(Libs.Android.CUSTOM_VIEW_POOLING_CONTAINER)
+    testImplementation()
+    androidTestImplementation()
+}

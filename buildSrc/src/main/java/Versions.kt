@@ -2,6 +2,8 @@ object Versions {
 
     // Android core version
     const val CORE_KTX_VERSION = "1.8.0"
+    const val CUSTOM_VIEW_VERSION = "1.2.0-alpha01"
+    const val CUSTOM_VIEW_POOLING_CONTAINER_VERSION = "1.0.0-rc01"
 
     // Compose version
     const val COMPOSE_VERSION = "1.2.0-beta03"
@@ -22,6 +24,7 @@ object Versions {
     const val COMPOSE_COMPILER_VERSION = COMPOSE_VERSION
     const val COMPOSE_COIL_VERSION = "2.1.0"
     const val COMPOSE_UI_TOOLING_VERSION = "1.1.1"
+    const val COMPOSE_ACTIVITY_VERSION = "1.4.0"
 
     // Lifecycle
     const val LIFECYCLE_RUNTIME_KTX_VERSION = LIFECYCLE_VERSION

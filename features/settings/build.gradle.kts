@@ -4,7 +4,9 @@ plugins {
 
 dependencies {
 
-    testImplementation()
+    implementation(project(Modules.CORE_NAVIGATION))
+    implementation(project(Modules.CORE_COMPONENTS))
+    implementation(project(Modules.CORE_THEMES))
+    implementation(project(Modules.CORE_ABSTRACTION))
 
-    androidTestImplementation()
 }

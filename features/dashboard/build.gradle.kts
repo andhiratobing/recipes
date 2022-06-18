@@ -1,7 +1,6 @@
 plugins {
     id("common-compose-plugin")
     id("dagger.hilt.android.plugin")
-    id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 dependencies {
@@ -11,16 +10,13 @@ dependencies {
     implementation(project(Modules.CORE_THEMES))
     implementation(project(Modules.CORE_ABSTRACTION))
 
-    implementationAndroidCore()
-
-    implementationComposeUi()
+    implementation(project(Modules.FEATURE_HOME))
+    implementation(project(Modules.FEATURE_SEARCH))
+    implementation(project(Modules.FEATURE_FAVORITE))
+    implementation(project(Modules.FEATURE_SETTINGS))
 
     implementation(Libs.DaggerHilt.DAGGER_HILT_ANDROID)
     kapt(Libs.DaggerHilt.DAGGER_HILT_COMPILER)
-
-    testImplementation()
-
-    androidTestImplementation()
 }
 
 // Allow references to generated code

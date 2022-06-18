@@ -13,8 +13,8 @@ internal val composeOfficialDependencies = listOf(
     Libs.Compose.COMPOSE_UI,
     Libs.Compose.COMPOSE_CONSTRAINT_LAYOUT,
     Libs.Compose.COMPOSE_NAVIGATION,
-    Libs.Compose.COMPOSE_UI_TOOLING,
-    Libs.Compose.COMPOSE_UI_TOOLING_PREVIEW
+    Libs.Compose.COMPOSE_UI_TOOLING_PREVIEW,
+    Libs.Compose.COMPOSE_ACTIVITY
 )
 
 internal val composePagerDependencies = listOf(

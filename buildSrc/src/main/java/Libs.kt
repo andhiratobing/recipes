@@ -3,6 +3,9 @@ object Libs {
     // Android group, name, include version dependencies
     object Android {
         const val CORE_KTX = "androidx.core:core-ktx:${Versions.CORE_KTX_VERSION}"
+        const val CUSTOM_VIEW = "androidx.customview:customview:${Versions.CUSTOM_VIEW_VERSION}"
+        const val CUSTOM_VIEW_POOLING_CONTAINER =
+            "androidx.customview:customview-poolingcontainer:${Versions.CUSTOM_VIEW_POOLING_CONTAINER_VERSION}"
     }
 
     // Compose group, name, include version dependencies
@@ -10,6 +13,8 @@ object Libs {
         const val COMPOSE_COMPILER =
             "androidx.compose.compiler:compiler:${Versions.COMPOSE_COMPILER_VERSION}"
         const val COMPOSE_UI = "androidx.compose.ui:ui:${Versions.COMPOSE_UI_VERSION}"
+        const val COMPOSE_ACTIVITY =
+            "androidx.activity:activity-compose:${Versions.COMPOSE_ACTIVITY_VERSION}"
         const val COMPOSE_MATERIAL =
             "androidx.compose.material3:material3:${Versions.COMPOSE_MATERIAL_VERSION}"
         const val COMPOSE_MATERIAL_WINDOW_SIZE =

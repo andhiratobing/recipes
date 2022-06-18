@@ -26,10 +26,3 @@ android {
         }
     }
 }
-
-dependencies {
-
-    testImplementation()
-
-    androidTestImplementation()
-}

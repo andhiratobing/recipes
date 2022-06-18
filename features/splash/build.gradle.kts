@@ -9,12 +9,4 @@ dependencies {
     implementation(project(Modules.CORE_THEMES))
 
     implementation(project(Modules.FEATURE_RECIPES))
-
-    implementationAndroidCore()
-    
-    implementationComposeUi()
-
-    testImplementation()
-
-    androidTestImplementation()
 }
