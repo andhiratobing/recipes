@@ -10,10 +10,8 @@ import io.ktor.client.engine.android.*
 import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.plugins.logging.*
-import io.ktor.client.plugins.websocket.*
 import io.ktor.client.request.*
 import io.ktor.http.*
-import io.ktor.serialization.kotlinx.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 import javax.inject.Singleton
@@ -57,11 +55,6 @@ object NetworkModule {
                 headers {
                     append(name = "x-api-key", value = BuildConfig.API_KEY)
                 }.build()
-            }
-
-            // Install converter
-            install(WebSockets) {
-                contentConverter = KotlinxWebsocketSerializationConverter(Json)
             }
         }
     }
