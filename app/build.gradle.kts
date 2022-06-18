@@ -62,6 +62,7 @@ dependencies {
     implementation(project(Modules.FEATURE_ON_BOARDING))
     implementation(project(Modules.FEATURE_DASHBOARD))
     implementation(project(Modules.FEATURE_HOME))
+    implementation(project(Modules.FEATURE_SEARCH))
     implementation(project(Modules.FEATURE_FAVORITE))
     implementation(project(Modules.FEATURE_SETTINGS))
     implementation(project(Modules.FEATURE_RECIPES))
