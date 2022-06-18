@@ -15,6 +15,7 @@ object Modules {
     // Feature
     const val FEATURE_SPLASH = ":features:splash"
     const val FEATURE_ON_BOARDING = ":features:on-boarding"
+    const val FEATURE_DASHBOARD = ":features:dashboard"
     const val FEATURE_HOME = ":features:home"
     const val FEATURE_FAVORITE = ":features:favorite"
     const val FEATURE_SETTINGS = ":features:settings"

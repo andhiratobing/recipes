@@ -24,7 +24,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -57,6 +60,7 @@ dependencies {
     // Feature
     implementation(project(Modules.FEATURE_SPLASH))
     implementation(project(Modules.FEATURE_ON_BOARDING))
+    implementation(project(Modules.FEATURE_DASHBOARD))
     implementation(project(Modules.FEATURE_HOME))
     implementation(project(Modules.FEATURE_FAVORITE))
     implementation(project(Modules.FEATURE_SETTINGS))
