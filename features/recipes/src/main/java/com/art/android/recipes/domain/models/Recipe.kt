@@ -5,4 +5,14 @@ data class Recipe(
     val image: String,
     val imageType: String,
     val title: String
-)
+) {
+
+    companion object {
+        val RECIPE_EMPTY = Recipe(
+            id = 0,
+            image = "",
+            imageType = "",
+            title = ""
+        )
+    }
+}
