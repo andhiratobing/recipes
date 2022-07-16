@@ -1,9 +1,9 @@
 package com.art.android.abstraction.di
 
-import com.art.android.abstraction.DefaultDispatcher
-import com.art.android.abstraction.IoDispatcher
-import com.art.android.abstraction.MainDispatcher
-import com.art.android.abstraction.UnconfinedDispatcher
+import com.art.android.abstraction.dispatcher.DefaultDispatcher
+import com.art.android.abstraction.dispatcher.IoDispatcher
+import com.art.android.abstraction.dispatcher.MainDispatcher
+import com.art.android.abstraction.dispatcher.UnconfinedDispatcher
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

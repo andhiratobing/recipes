@@ -1,4 +1,4 @@
-package com.art.android.abstraction
+package com.art.android.abstraction.dispatcher
 
 import javax.inject.Qualifier
 

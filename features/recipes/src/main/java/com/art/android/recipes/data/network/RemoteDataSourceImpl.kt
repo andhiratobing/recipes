@@ -1,6 +1,6 @@
 package com.art.android.recipes.data.network
 
-import com.art.android.abstraction.IoDispatcher
+import com.art.android.abstraction.dispatcher.IoDispatcher
 import com.art.android.recipes.data.network.api.ApiService
 import com.art.android.recipes.data.network.models.RecipeResponse
 import kotlinx.coroutines.CoroutineDispatcher
