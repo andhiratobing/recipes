@@ -1,5 +1,6 @@
 package com.art.android.recipes.navigation.directions
 
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
@@ -11,6 +12,7 @@ import com.art.android.recipes.ui.RecipesScreen
  * @project RecipesRepository
  */
 
+@ExperimentalMaterial3Api
 object RecipesNavDirection : NavigationScreen {
 
     override val route: String

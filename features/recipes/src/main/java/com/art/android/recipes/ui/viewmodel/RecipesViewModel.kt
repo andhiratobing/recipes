@@ -3,10 +3,10 @@ package com.art.android.recipes.ui.viewmodel
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.art.android.abstraction.state.ResponseState
 import com.art.android.abstraction.state.ResultState
 import com.art.android.recipes.domain.usecase.GetRecipesUseCase
 import com.art.android.recipes.ui.state.RecipesUiState
-import com.art.android.recipes.ui.state.ResponseState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

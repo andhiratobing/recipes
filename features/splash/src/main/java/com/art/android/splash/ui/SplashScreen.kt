@@ -1,5 +1,6 @@
 package com.art.android.splash.ui
 
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.navigation.NavController
@@ -12,6 +13,7 @@ import kotlinx.coroutines.delay
  * @project RecipesRepository
  */
 
+@ExperimentalMaterial3Api
 @Composable
 fun SplashScreen(
     navController: NavController
