@@ -37,24 +37,19 @@ fun ArtText(
     tagName: String? = null,
     onTextLayout: (TextLayoutResult) -> Unit = {},
 ) {
-    Surface(
-        modifier = modifier,
-        contentColor = MaterialTheme.colorScheme.onSurface
-    ) {
-        Text(
-            modifier = modifier.tag(tagName.orEmpty()),
-            text = text,
-            textAlign = textAlign,
-            style = style,
-            color = color,
-            maxLines = maxLines,
-            letterSpacing = letterSpacing,
-            textDecoration = textDecoration,
-            overflow = overflow,
-            softWrap = softWrap,
-            onTextLayout = onTextLayout
-        )
-    }
+    Text(
+        modifier = modifier.tag(tagName.orEmpty()),
+        text = text,
+        textAlign = textAlign,
+        style = style,
+        color = color,
+        maxLines = maxLines,
+        letterSpacing = letterSpacing,
+        textDecoration = textDecoration,
+        overflow = overflow,
+        softWrap = softWrap,
+        onTextLayout = onTextLayout
+    )
 }
 
 @Preview(
@@ -68,10 +63,14 @@ fun ArtText(
     uiMode = ComposePreview.MODE_DARK
 )
 @Composable
-fun ArtTextPreview() {
+private fun ArtTextPreview() {
     RecipesTheme {
-        ArtText(
-            text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        )
+        Surface(
+            contentColor = MaterialTheme.colorScheme.onBackground
+        ) {
+            ArtText(
+                text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            )
+        }
     }
 }
