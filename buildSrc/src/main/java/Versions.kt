@@ -59,4 +59,16 @@ object Versions {
     const val JUNIT_VERSION = "4.13.2"
     const val EXT_JUNIT_VERSION = "1.1.3"
     const val ESPRESSO_CORE_VERSION = "3.4.0"
+
+    // Kotlin Junit5
+    const val KOTLIN_VERSION_JUNIT5 = "1.3.61"
+
+    // MockK
+    const val MOCKK_VERSION = "1.12.4"
+
+    // Mock web server
+    const val MOCK_WEB_SERVER_VERSION = "4.10.0"
+
+    // Google truth
+    const val GOOGLE_TRUTH_VERSION = "1.1.3"
 }

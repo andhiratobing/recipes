@@ -57,7 +57,12 @@ fun DependencyHandler.implementationLifecycleViewModel() {
  * Unit test
  */
 fun DependencyHandler.testImplementation() {
-    unitTestDependencies.forEach { add("testImplementation", it) }
+    unitTestDependencies.plus(Tests.MOCKK_TEST)
+        .plus(Tests.GOOGLE_TRUTH_TEST)
+        .plus(Tests.MOCK_WEB_SERVER_TEST)
+        .forEach {
+            add("testImplementation", it)
+        }
 }
 
 /**

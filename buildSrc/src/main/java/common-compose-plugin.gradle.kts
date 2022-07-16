@@ -44,5 +44,10 @@ dependencies {
     debugApi(Libs.Android.CUSTOM_VIEW)
     debugApi(Libs.Android.CUSTOM_VIEW_POOLING_CONTAINER)
     testImplementation()
+    testImplementation(Tests.KOTLIN_JUNIT5_TEST)
+    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("androidx.test:core-ktx:1.4.0")
+    implementation(Tests.COROUTINE_TEST)
     androidTestImplementation()
 }
