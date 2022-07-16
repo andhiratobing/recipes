@@ -39,3 +39,17 @@ fun <T> Flow<T>.asResult(): Flow<ResultState<T>> {
         emit(ResultState.Completion)
     }
 }
+
+/**
+ * Status usage which can be obtained from the response use case
+ */
+sealed interface ResponseState<out T> {
+
+    data class Success<T>(val data: T) : ResponseState<T>
+
+    data class Error(val message: String) : ResponseState<Nothing>
+
+    object Loading : ResponseState<Nothing>
+
+    object Completion : ResponseState<Nothing>
+}
