@@ -22,6 +22,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import com.art.android.abstraction.UnitLambda
 import com.art.android.components.R
+import com.art.android.components.icon.ArtIcon
+import com.art.android.components.text.ArtText
 import com.art.android.themes.RecipesTheme
 import com.art.android.themes.Typography
 
@@ -46,12 +48,11 @@ fun ArtTopAppBar(
     onClickIconAction: UnitLambda = {},
     iconAction: ImageVector? = null,
     tintIconAction: Color = MaterialTheme.colorScheme.onBackground,
-    contentDescriptionAction: String? = null,
+    tagName: String? = null,
     isEnabledClickIconActionTwo: Boolean = true,
     onClickIconActionTwo: UnitLambda = {},
     iconActionTwo: ImageVector? = null,
     tintIconActionTwo: Color = MaterialTheme.colorScheme.onBackground,
-    contentDescriptionActionTwo: String? = null,
     isShowDoubleIconAction: Boolean = false,
     actions: @Composable RowScope.() -> Unit = {},
     topAppBarColors: TopAppBarColors = TopAppBarDefaults.smallTopAppBarColors(),
@@ -69,7 +70,7 @@ fun ArtTopAppBar(
         modifier = modifier,
         title = {
             title?.let { title ->
-                Text(
+                ArtText(
                     text = title,
                     maxLines = maxLines,
                     color = titleColor,
@@ -99,40 +100,41 @@ fun ArtTopAppBar(
         actions = {
             when {
                 isShowSingleIconAction -> {
-                    IconAction(
+                    ArtIcon(
                         modifier = modifier,
-                        isEnabledClickIconAction = isEnabledClickIconAction,
-                        onClickIconAction = onClickIconAction,
-                        iconAction = iconAction,
-                        contentDescriptionAction = contentDescriptionAction,
+                        isEnabledClickIcon = isEnabledClickIconAction,
+                        onClickIcon = onClickIconAction,
+                        icon = iconAction,
                         interactionSource = interactionSource,
-                        colors = iconButtonColors
+                        tintIcon = tintIconAction,
+                        colors = iconButtonColors,
+                        tagName = tagName
                     )
                 }
                 isShowDoubleIconAction -> {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         content = {
-                            IconAction(
+                            ArtIcon(
                                 modifier = modifier,
-                                isEnabledClickIconAction = isEnabledClickIconAction,
-                                onClickIconAction = onClickIconAction,
-                                iconAction = iconAction,
-                                contentDescriptionAction = contentDescriptionAction,
+                                isEnabledClickIcon = isEnabledClickIconAction,
+                                onClickIcon = onClickIconAction,
+                                icon = iconAction,
                                 interactionSource = interactionSource,
+                                tintIcon = tintIconAction,
                                 colors = iconButtonColors,
-                                tintIconAction = tintIconAction
+                                tagName = tagName
                             )
 
-                            IconAction(
+                            ArtIcon(
                                 modifier = modifier,
-                                isEnabledClickIconAction = isEnabledClickIconActionTwo,
-                                onClickIconAction = onClickIconActionTwo,
-                                iconAction = iconActionTwo,
-                                contentDescriptionAction = contentDescriptionActionTwo,
+                                isEnabledClickIcon = isEnabledClickIconActionTwo,
+                                onClickIcon = onClickIconActionTwo,
+                                icon = iconActionTwo,
                                 interactionSource = interactionSourceTwo,
                                 colors = iconButtonColorsTwo,
-                                tintIconAction = tintIconActionTwo
+                                tintIcon = tintIconActionTwo,
+                                tagName = tagName
                             )
                         }
                     )
@@ -141,39 +143,6 @@ fun ArtTopAppBar(
             }
         },
         colors = topAppBarColors
-    )
-}
-
-
-/**
- * Icon action one
- */
-@Composable
-private fun IconAction(
-    modifier: Modifier = Modifier,
-    isEnabledClickIconAction: Boolean = false,
-    onClickIconAction: UnitLambda = {},
-    iconAction: ImageVector? = null,
-    tintIconAction: Color = MaterialTheme.colorScheme.onBackground,
-    contentDescriptionAction: String? = null,
-    interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-    colors: IconButtonColors = IconButtonDefaults.iconButtonColors()
-) {
-    IconButton(
-        modifier = modifier,
-        enabled = isEnabledClickIconAction,
-        interactionSource = interactionSource,
-        colors = colors,
-        onClick = onClickIconAction,
-        content = {
-            iconAction?.let { icon ->
-                Icon(
-                    imageVector = icon,
-                    contentDescription = contentDescriptionAction,
-                    tint = tintIconAction
-                )
-            }
-        }
     )
 }
 
